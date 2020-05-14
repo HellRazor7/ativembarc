@@ -1,0 +1,47 @@
+const int verm = 11;
+const int azul= 10;
+const int verd = 9;
+
+void setup()
+{
+  pinMode(verm, OUTPUT);
+  pinMode(azul, OUTPUT);
+  pinMode(verd, OUTPUT);
+  apagartodos();
+}
+
+void loop()
+{
+  acenderMagenta();
+  delay(1000);
+  acenderCiano();
+  delay(1000);
+  acenderAmarelo();
+  delay(1000);
+  apagartodos();
+  delay(1000);
+}
+
+void acenderMagenta(){
+  digitalWrite(verm,1);
+  digitalWrite(azul,1);
+  digitalWrite(verd,0);
+}
+
+void acenderCiano(){
+  digitalWrite(verm,0);
+  digitalWrite(azul,1);
+  digitalWrite(verd,1);
+}
+
+void acenderAmarelo(){
+  digitalWrite(verm,1);
+  digitalWrite(azul,0);
+  digitalWrite(verd,1);
+}
+
+void apagartodos(){
+  digitalWrite(verm,0);
+  digitalWrite(azul,0);
+  digitalWrite(verd,0);
+}
