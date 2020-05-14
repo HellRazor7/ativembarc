@@ -1,0 +1,17 @@
+const int verm = 11;
+const int azul= 10;
+const int verd = 9;
+
+void setup()
+{
+  pinMode(verm, OUTPUT);
+  pinMode(azul, OUTPUT);
+  pinMode(verd, OUTPUT);
+}
+
+void loop()
+{
+  analogWrite(verm,12);
+  analogWrite(azul,225);
+  analogWrite(verd,90);
+}
