@@ -10,9 +10,9 @@ void setup()
 void loop()
 {
   if( digitalRead(9) == 0){
-    int verm = random(0,255);
-    int azul = random(0,255);
-    int verd = random(0,255);
+    int verm = random(0,256);
+    int azul = random(0,256);
+    int verd = random(0,256);
     if(verm == 255 && azul == 0 && verd == 0){
     digitalWrite(13, 1);
     delay (2000);
